@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(reverse_priority_step)
+project(reverse_priority)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
@@ -53,8 +53,8 @@ include_directories(
 )
 
 
-add_executable(reverse_priority_step src/reverse_priority_step.cpp src/main.cpp)
-add_dependencies(reverse_priority_step ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(reverse_priority_step ${catkin_LIBRARIES})
+add_executable(reverse_priority src/reverse_priority_step.cpp src/main.cpp)
+add_dependencies(reverse_priority ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(reverse_priority ${catkin_LIBRARIES})
 
 
